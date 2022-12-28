@@ -1,5 +1,6 @@
 package com.dev.backend.entity;
 
+
 import java.util.Date;
 
 import jakarta.persistence.Entity;
@@ -12,19 +13,15 @@ import jakarta.persistence.TemporalType;
 import lombok.Data;
 
 @Entity
-@Table(name = "estado")
+@Table(name = "cidade")
 @Data
-public class Estado {
-
+public class Cidade {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    
+
     private String nome;
-    private String sigla;
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date dataCriacao;
     @Temporal(TemporalType.TIMESTAMP)
     private Date dataAtualizacao;
-    
 }
