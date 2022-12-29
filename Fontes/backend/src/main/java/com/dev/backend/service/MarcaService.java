@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.dev.backend.entity.Cidade;
 import com.dev.backend.entity.Marca;
 import com.dev.backend.repository.MarcaRepository;
 
