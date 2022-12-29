@@ -2,8 +2,8 @@ package com.dev.backend.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.dev.backend.entity.Marca;
+import com.dev.backend.entity.Pessoa;
 
-public interface MarcaRepository extends JpaRepository<Marca,Long>{
+public interface PessoaRepository extends JpaRepository<Pessoa,Long>{
     
 }

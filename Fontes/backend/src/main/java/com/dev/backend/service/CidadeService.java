@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.dev.backend.entity.Cidade;
@@ -30,7 +29,7 @@ public class CidadeService {
         return cidadeRepository.saveAndFlush(cidade);
     }
 
-    public Void excluir(Long id){
+    public void excluir(Long id){
         Cidade cidade = cidadeRepository.findById(id).get();
         cidadeRepository.delete(cidade);
     }
